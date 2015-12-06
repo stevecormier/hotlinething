@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>🔥☎️✨</title>
+        <style>
+            ul {
+                padding: 20px;
+                background-color: #FCADC3;
+                display: inline-block;
+                margin: 0;
+            }
+            li {
+                line-height: 1.15;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-family: "Helvetica Neue";
+                font-style: italic;
+                letter-spacing: 1px;
+                font-size: 65px;
+                color: #fff;
+            }
+            input {
+                display: block;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" name="hotline" value="1-800-hotlinebling">
+        <ul>
+            <li>1-800-hotlinebling</li>
+            <li>1-800-hotlinebling</li>
+            <li>1-800-hotlinebling</li>
+            <li>1-800-hotlinebling</li> <li>1-800-hotlinebling</li>
+            <li>1-800-hotlinebling</li>
+            <li>1-800-hotlinebling</li>
+            <li>1-800-hotlinebling</li>
+            <li>1-800-hotlinebling</li>
+            <li>1-800-hotlinebling</li>
+        </ul>
+
+        <script>
+            var input = document.getElementsByTagName('input')[0];
+            var items = document.getElementsByTagName('li');
+            var text = '';
+
+            input.oninput = function() {
+                text = input.value;
+                for (var i = 0; i < items.length; i++) {
+                    items[i].innerHTML = text;
+                }
+            }
+        </script>
+    </body>
+</html>
